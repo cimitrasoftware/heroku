@@ -15,7 +15,7 @@ $TempFile = New-TemporaryFile
 Copy-Item $TemplateFile $TempFile
 
 # Get the content of the Temp search and replace the REPLACE_TEXT string
-(Get-Content -path $TempFile  -Raw) -replace 'REPLACE_TEXT', $ReplaceText
+(Get-Content -path $TempFile  -Raw) -replace 'REPLACE_TEXT', $ReplaceText | Set-Content -path $TempFile 
 
 # Move the Temporary file to the index.html file
 Move-Item $TempFile $IndexFile -Force
