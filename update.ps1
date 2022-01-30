@@ -3,5 +3,5 @@
 Set-Location C:\Users\tay\heroku\Node-Heroku-Deployment
 git pull
 git add .
-git commit -am "update"
-git push
+git -q commit -am "update"
+git -q push
