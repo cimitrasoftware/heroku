@@ -26,3 +26,5 @@ Move-Item $TempFile $IndexFile -Force
 # Update via Git
 & "C:\Users\Tay\heroku\Node-Heroku-Deployment\update.ps1"
 
+Write-Output "Thanks, Quote Posted!"
+
