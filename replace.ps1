@@ -27,4 +27,5 @@ Move-Item $TempFile $IndexFile -Force
 & "C:\Users\Tay\heroku\Node-Heroku-Deployment\update.ps1"
 
 Write-Output "Thanks, Quote Posted!"
+Write-Output "The Heroku Server build will take about 2 minutes."
 
