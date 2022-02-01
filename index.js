@@ -11,11 +11,8 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-
-
 app.get("/thanks", function (req, res) {
   res.send("Thank You For Coming!");
 });
-
 
 app.listen(process.env.PORT || 5000);
